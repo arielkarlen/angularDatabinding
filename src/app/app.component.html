@@ -2,8 +2,21 @@
   <div class="row">
     <h3>Mi nombre es {{name}}</h3>
   </div>
+
   <div class="row">
     <input type="text" class="form-control" [placeholder]="textPlaceholder" [disabled]="deshabilitado">
-    <img [src]="img" width="400px" height="400px">
   </div>
+  <img [src]="img" width="400px" height="400px">
+</div>
+
+<div class="container">
+  <h3>{{text}}</h3>
+  <button class="btn btn-primary" (click)="cambiarTexto()">Hacer Click</button>
+</div>
+
+<div class="container">
+
+  <input type="text" class="form-control" placeholder="Escriba algo aqui" [(ngModel)]="changeText">
+  <h3>{{changeText}}</h3>
+
 </div>
