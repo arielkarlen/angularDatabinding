@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'databinding';
+ 
+  name= "Ariel Alejandro";
+  constructor()
+  {
+
+    setInterval(()=>this.name="Jorgito", 3000)
+  }
+
+  getSuma(num: number, num2: number) {
+    return num + num2
+  }
 }
