@@ -9,7 +9,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent
   ],
   imports: [
-    NgModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
